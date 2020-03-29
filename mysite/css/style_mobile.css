@@ -1,0 +1,31 @@
+#links{
+	display: none;
+}
+
+#search {
+	display: none;
+}
+
+
+#container {
+	width: 100%;
+}
+
+ #prawakolumna {
+	width:100%;
+}
+ #lewakolumna{
+ 	width:100%;
+ }
+
+body {
+
+	font-size:15px;
+} 
+
+
+#house {
+	width: 50%;
+	 height: 50%; 
+
+}
