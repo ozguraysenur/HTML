@@ -1,0 +1,22 @@
+<html>
+<head>     
+  <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>      
+   <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js">  	
+   </script>
+</head>
+  <body>
+    <a-scene>
+	  <a-sphere src="https://images.pexels.com/photos/2422/sky-earth-galaxy-universe.jpg?cs=srgb&dl=astronomi-bilim-dunya-evren-2422.jpg&fm=jpg"position="0 1.25 -5" radius="1.25" >	
+	  </a-sphere>
+	      <a-box src="https://images.pexels.com/photos/3584430/pexels-photo-3584430.jpeg?cs=srgb&dl=safak-gun-dogumu-gun-batimi-hava-3584430.jpg&fm=jpg"position="-1.5 1.25 -2.50" rotation="0 45 45" width ="0.5" height="0.5" depth="0.5" scale= "2 2 2"></a-box>
+	      <a-cylinder src="https://images.pexels.com/photos/3817038/pexels-photo-3817038.jpeg?cs=srgb&dl=cicekler-tac-yapraklar-yapraklar-cicek-acmak-3817038.jpg&fm=jpg" position="1 0.75 -3" radius="0.5" height="1.5"></a-cylinder>
+	      <a-plane src="https://images.pexels.com/photos/531767/pexels-photo-531767.jpeg?cs=srgb&dl=acik-acik-hava-atmosfer-beyaz-531767.jpg&fm=jpg"position="0 0 -4" rotation="-90 0 0" width="4" height="4" ></a-plane>
+	      <a-sky src="https://images.pexels.com/photos/3934512/pexels-photo-3934512.jpeg?cs=srgb&dl=gokyuzu-uzay-aksam-gokada-3934512.jpg&fm=jpg" ></a-sky>
+	     	<a-entity environment="preset:japan; dressingAmount: 250"></a-entity> 
+
+	        <a-light type="ambient" intensity="0.3" position="2 2 2"></a-light>
+      <a-light type="point" intensity="0.8" position="5 5 1"></a-light>
+      
+    </a-scene>
+  </body>
+</html>
