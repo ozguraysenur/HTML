@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h1 id="title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, mollitia?</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, nobis?</p>
+    <button onmouseover="mouseover()" onmouseout="mouseout()"  id="btn"> Button </button>
+<script>
+    var btn = document.querySelector('#btn');
+    var p = document.querySelector('p');
+    var h1 = document.getElementById('title');
+
+    btn.addEventListener('click',function(){
+        p.innerHTML= "button clicked....";
+    });
+
+    function mouseover(){
+        p.innerHTML="mouse over...";
+    }
+    function mouseout(){
+        p.innerHTML="mouse out...";
+    }
+    h1.addEventListener('click',function(){
+        h1.style.backgroundColor= 'pink';
+    })
+
+</script>
+
+</body>
+</html>

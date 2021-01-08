@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini app</title>
+    <style>
+        .box{
+            width: 120px;
+            height: 120px;
+            margin: 10px;
+            float: left;
+        }
+        #red{
+            background-color: red;
+        }
+        #blue{
+            background-color: blue;
+        }
+        #green{
+            background-color: green;
+        }
+        #yellow{
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="red" class="box"></div>
+    <div id="green" class="box"></div>
+    <div id="blue" class="box"></div>
+    <div id="yellow" class="box"></div>
+
+
+    <script>
+        var boxes=document.querySelectorAll('.box');
+        boxes.forEach(function(box){
+            box.addEventListener('click',function(){
+                this.style.display='none';
+            });
+        }
+            
+        );
+    </script>
+</body>
+</html>
