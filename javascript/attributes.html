@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes - Uygulama</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="card">
+                    <img class="card-img-top" src="" alt="" height="350px" width="300px">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <a href="" class="btn btn-primary">read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script>
+        var photos= [
+                {
+                name :'halic',
+                image : 'image/image1.jpg',
+                link : 'https://tr.wikipedia.org/wiki/Hali%C3%A7'
+                },
+                {
+                name :'galata',
+                image : 'image/image2.jpg',
+                link : 'https://istanbul.ktb.gov.tr/TR-165615/galata-kulesi.html'
+                },
+                {
+                name :'dolmabahce',
+                image : 'image/image3.jpg',
+                link : 'https://www.millisaraylar.gov.tr/saraylar/dolmabahce-sarayi'
+                }
+            ];
+        var ran= Math.floor(Math.random()*photos.length);
+        var img =document.querySelector('.card-img-top');
+        var h5 =document.querySelector('.card-title');
+        var a =document.querySelector('a');
+        setInterval(function(){
+            var ran= Math.floor(Math.random()*photos.length);
+
+            img.setAttribute('src',photos[ran].image);
+            a.setAttribute('href',photos[ran].link);
+            h5.textContent=photos[ran].name;
+        },1000);
+
+
+        
+    </script>
+</body>
+</html>
